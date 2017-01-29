@@ -36294,9 +36294,28 @@
 	            null,
 	            _react2['default'].createElement(
 	              _reactBootstrap.Col,
-	              { xs: 3, md: 6 },
-	              _react2['default'].createElement(_reactBootstrap.Thumbnail, { href: link, src: source })
-	            )
+	              { xs: 12, md: 6 },
+	              _react2['default'].createElement('image', { src: source, responsive: true })
+	            ),
+	            _react2['default'].createElement(
+	              _reactBootstrap.Col,
+	              { xs: 8, md: 3 },
+	              _react2['default'].createElement(
+	                'p',
+	                null,
+	                'Sit quia nemo quis enim provident porro eaque accusamus tenetur provident aliquid commodi? Velit nesciunt maiores obcaecati totam praesentium sint vitae exercitationem quaerat maxime iusto et! Consequatur aspernatur sit impedit'
+	              ),
+	              _react2['default'].createElement(
+	                'p',
+	                null,
+	                _react2['default'].createElement(
+	                  _reactBootstrap.Button,
+	                  { href: link, bsStyle: 'info' },
+	                  'View on Flickr »'
+	                )
+	              )
+	            ),
+	            _react2['default'].createElement(_reactBootstrap.Col, { xsOffset: 6 })
 	          )
 	        )
 	      );

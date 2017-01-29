@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Button, Grid, Row, Thumbnail } from 'react-bootstrap';
+import { Button, Col, Grid, Image, Row } from 'react-bootstrap';
 
 export default class FlickrImage extends Component {
 
@@ -11,8 +11,18 @@ export default class FlickrImage extends Component {
       <div>
         <Grid>
           <Row>
-            <Col xs={3} md={6}>
-              <Thumbnail href={link} src={source} />
+            <Col xs={12} md={6}>
+              <image src={source} responsive />
+            </Col>
+            <Col xs={8} md={3}>
+              <p>
+                Sit quia nemo quis enim provident porro eaque accusamus tenetur provident aliquid commodi? Velit nesciunt maiores obcaecati totam praesentium sint vitae exercitationem quaerat maxime iusto et! Consequatur aspernatur sit impedit
+              </p>
+              <p>
+                <Button href={link} bsStyle="info">View on Flickr »</Button>
+              </p>
+            </Col>
+            <Col xsOffset={6}>
             </Col>
           </Row>
         </Grid>
