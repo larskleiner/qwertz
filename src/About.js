@@ -25,7 +25,7 @@ export default class About extends Component {
     return (
       <p>
         <Button bsStyle='primary' bsSize='large' onClick={this.openModal}>About »</Button>
-        <Modal show={this.state.open} onHide={this.closeModal}>
+        <Modal bsSize="large" show={this.state.open} onHide={this.closeModal}>
           <Modal.Header closeButton>
             <Modal.Title>About</Modal.Title>
           </Modal.Header>

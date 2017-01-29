@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Modal } from 'react-bootstrap';
+import $ from 'jquery';
+import FlickrImage from './FlickrImage';
 
 export default class Photos extends Component {
   constructor() {
@@ -9,8 +11,26 @@ export default class Photos extends Component {
     this.openModal = this.openModal.bind(this);
 
     this.state = {
-      open: false
+      open: false,
+      item: []
     }
+  }
+
+  componentDidMount() {
+    const flickrSource = "https://api.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key=4f57950ccacd369c46b811502a5d1cee&user_id=45872427%40N00&per_page=1&page=1&format=json&nojsoncallback=1";
+    this.serverRequest = $.getJSON(
+      flickrSource, { format: "json" }
+    )
+      .done(data => {
+        this.setState({
+          item: data.photos.photo
+        });
+      })
+      .fail(console.error);
+  }
+
+  componentWillUnmount() {
+    this.serverRequest.abort();
   }
 
   closeModal() {
@@ -25,12 +45,12 @@ export default class Photos extends Component {
     return (
       <p>
         <Button bsStyle='primary' onClick={this.openModal}>Photos »</Button>
-        <Modal show={this.state.open} onHide={this.closeModal}>
+        <Modal bsSize="large" show={this.state.open} onHide={this.closeModal}>
           <Modal.Header closeButton>
             <Modal.Title>Photos</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            This demonstrates how to use the Modal component from React-Bootstrap
+            <FlickrImage item={this.state.item} />
           </Modal.Body>
           <Modal.Footer>
             <Button bsStyle='primary' onClick={this.closeModal}>Close</Button>

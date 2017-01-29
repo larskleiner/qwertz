@@ -25,7 +25,7 @@ export default class Dev extends Component {
     return (
       <p>
         <Button bsStyle='primary' onClick={this.openModal}>Web Development »</Button>
-        <Modal show={this.state.open} onHide={this.closeModal}>
+        <Modal bsSize="large" show={this.state.open} onHide={this.closeModal}>
           <Modal.Header closeButton>
             <Modal.Title>Web Development</Modal.Title>
           </Modal.Header>
