@@ -8,11 +8,11 @@ export default class Footer extends React.Component {
       <Grid>
         <hr />
         <footer>
-          <p>
+          <div>
             © 2017 <Badge>qwertz ltd</Badge> ·
             Registered in England and Wales no 6012848 ·
             View this site on <a href="https://github.com/larskleiner/qwertz">GitHub</a>
-          </p>
+          </div>
         </footer>
       </Grid>
     );

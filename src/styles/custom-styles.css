@@ -1,7 +1,20 @@
-.jumbotron {
-  background-color: #ffef;
-  margin-top: 48px;
+h4 {
+    font-size: 25px;
 }
+
+p {
+    font-size: 18px;
+}
+
+.modal-body {
+    font-size: 18px;
+}
+
+.jumbotron {
+    background-color: #ffef;
+    margin-top: 48px;
+}
+
 .glyphicon {
-  padding-right: 5px;
+    padding-right: 5px;
 }

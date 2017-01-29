@@ -18748,7 +18748,7 @@
 
 
 	// module
-	exports.push([module.id, ".jumbotron {\n  background-color: #ffef;\n  margin-top: 48px;\n}\n.glyphicon {\n  padding-right: 5px;\n}\n", ""]);
+	exports.push([module.id, "h4 {\n    font-size: 25px;\n}\n\np {\n    font-size: 18px;\n}\n\n.modal-body {\n    font-size: 18px;\n}\n\n.jumbotron {\n    background-color: #ffef;\n    margin-top: 48px;\n}\n\n.glyphicon {\n    padding-right: 5px;\n}\n", ""]);
 
 	// exports
 
@@ -23774,7 +23774,7 @@
 	          'footer',
 	          null,
 	          _react2['default'].createElement(
-	            'p',
+	            'div',
 	            null,
 	            '© 2017 ',
 	            _react2['default'].createElement(
