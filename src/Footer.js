@@ -1,8 +1,7 @@
-import React from 'react';
-import Grid from 'react-bootstrap/lib/Grid';
-import Badge from 'react-bootstrap/lib/Badge';
+import React, { Component } from 'react';
+import { Badge, Grid } from 'react-bootstrap';
 
-export default class Footer extends React.Component {
+export default class Footer extends Component {
   render() {
     return (
       <Grid>

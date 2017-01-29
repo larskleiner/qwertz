@@ -1,15 +1,10 @@
-import React from 'react';
-import Button from 'react-bootstrap/lib/Button';
-import Grid from 'react-bootstrap/lib/Grid';
-import Jumbotron from 'react-bootstrap/lib/Jumbotron';
-import Row from 'react-bootstrap/lib/Row';
-import Col from 'react-bootstrap/lib/Col';
-import Glyphicon from 'react-bootstrap/lib/Glyphicon';
+import React, { Component } from 'react';
+import { Col, Glyphicon, Grid, Jumbotron, Row } from 'react-bootstrap';
 import About from './About';
 import Photos from './Photos';
 import Dev from './Dev';
 
-export default class Body extends React.Component {
+export default class Body extends Component {
   render() {
     return (
       <div>
