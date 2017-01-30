@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Button, Modal } from 'react-bootstrap';
+import { Col, Button, Grid, Modal, Row } from 'react-bootstrap';
 import $ from 'jquery';
 import FlickrImage from './FlickrImage';
+import InstagramImage from './InstagramImage';
 
 export default class Photos extends Component {
   constructor() {
@@ -50,7 +51,16 @@ export default class Photos extends Component {
             <Modal.Title>Photos</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <FlickrImage item={this.state.item} />
+            <Grid>
+              <Row>
+                <Col>
+                  <FlickrImage item={this.state.item} />
+                </Col>
+                <Col>
+                  <InstagramImage />
+                </Col>
+              </Row>
+            </Grid>
           </Modal.Body>
           <Modal.Footer>
             <Button bsStyle='primary' onClick={this.closeModal}>Close</Button>
