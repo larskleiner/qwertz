@@ -37737,7 +37737,20 @@
 	          _react2['default'].createElement(
 	            _reactBootstrap.Modal.Body,
 	            null,
-	            'This demonstrates how to use the Modal component from React-Bootstrap'
+	            _react2['default'].createElement(
+	              'p',
+	              null,
+	              'Sit quia nemo quis enim provident porro eaque accusamus tenetur provident aliquid commodi? Velit nesciunt maiores obcaecati totam praesentium sint vitae exercitationem quaerat maxime iusto et! Consequatur aspernatur sit impedit'
+	            ),
+	            _react2['default'].createElement(
+	              'p',
+	              null,
+	              _react2['default'].createElement(
+	                _reactBootstrap.Button,
+	                { href: 'https://www.linkedin.com/in/larskleiner', bsStyle: 'info' },
+	                'View on linkedin »'
+	              )
+	            )
 	          ),
 	          _react2['default'].createElement(
 	            _reactBootstrap.Modal.Footer,

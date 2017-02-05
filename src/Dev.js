@@ -30,7 +30,12 @@ export default class Dev extends Component {
             <Modal.Title>Web Development</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            This demonstrates how to use the Modal component from React-Bootstrap
+            <p>
+              Sit quia nemo quis enim provident porro eaque accusamus tenetur provident aliquid commodi? Velit nesciunt maiores obcaecati totam praesentium sint vitae exercitationem quaerat maxime iusto et! Consequatur aspernatur sit impedit
+            </p>
+            <p>
+              <Button href="https://www.linkedin.com/in/larskleiner" bsStyle="info">View on linkedin »</Button>
+            </p>
           </Modal.Body>
           <Modal.Footer>
             <Button bsStyle='primary' onClick={this.closeModal}>Close</Button>
