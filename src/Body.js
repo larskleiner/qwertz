@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Col, Glyphicon, Grid, Jumbotron, Row } from 'react-bootstrap';
-import About from './About';
 import Photos from './Photos';
 import Dev from './Dev';
 
@@ -11,8 +10,7 @@ export default class Body extends Component {
         <Jumbotron>
           <Grid>
             <h1>Lars Kleiner</h1>
-            <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-            <About />
+            <p>develops web applications for more then 15 years. He can help you connect your front end to your backend micro services or migrate your site to Drupal 8. Lars has over 10 years experience with PHP frameworks, especially <a href="http://www.drupal.org">Drupal</a> and <a href="http://symfony.com">Symfony</a>. This site is based on <a href="https://react-bootstrap.github.io/">React Bootstrap</a>.</p>
           </Grid>
         </Jumbotron>
         <Grid>
@@ -22,7 +20,7 @@ export default class Body extends Component {
                 <Glyphicon glyph="cog" />
                 Web Development
               </h2>
-              <p>Adipisicing ratione incidunt eaque expedita rerum porro inventore. Nihil sit ipsam iure officiis sit eos at quibusdam natus dignissimos natus dolore! Vel doloremque ipsa alias nihil harum laborum necessitatibus rerum?</p>
+              <p>Lars is a freelance web developer based in London and Hamburg, Germany. His clients include a range of enterprises across the UK and the European continent. Contact Lars via linkedin.</p>
               <Dev />
             </Col>
             <Col md={6}>
@@ -30,7 +28,7 @@ export default class Body extends Component {
                 <Glyphicon glyph="camera" />
                 Photos
               </h2>
-              <p>Sit quia nemo quis enim provident porro eaque accusamus tenetur provident aliquid commodi? Velit nesciunt maiores obcaecati totam praesentium sint vitae exercitationem quaerat maxime iusto et! Consequatur aspernatur sit impedit.</p>
+              <p>Lars frequently takes his camera along for walks around town and has assembled a portfolio of cityscapes of positively amazing places across the world.</p>
               <Photos />
             </Col>
           </Row>

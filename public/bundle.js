@@ -60,7 +60,7 @@
 
 	var _Body2 = _interopRequireDefault(_Body);
 
-	var _Footer = __webpack_require__(485);
+	var _Footer = __webpack_require__(484);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -18748,7 +18748,7 @@
 
 
 	// module
-	exports.push([module.id, "h4 {\n    font-size: 25px;\n}\n\np {\n    font-size: 18px;\n}\n\n.modal-body {\n    font-size: 18px;\n}\n\n.jumbotron {\n    background-color: #ffef;\n    margin-top: 48px;\n}\n\n.glyphicon {\n    padding-right: 5px;\n}\n", ""]);
+	exports.push([module.id, "h4 {\n    font-size: 25px;\n}\n\np {\n    font-size: 18px;\n}\n\n.modal-body {\n    font-size: 18px;\n}\n\n.jumbotron {\n    background-color: #ffef;\n    margin-top: 48px;\n}\n\n.glyphicon {\n    padding-right: 5px;\n}\n\n.photo-section {\n    margin-top: 20px;\n}\n", ""]);
 
 	// exports
 
@@ -18779,15 +18779,11 @@
 
 	var _reactBootstrap = __webpack_require__(238);
 
-	var _About = __webpack_require__(470);
-
-	var _About2 = _interopRequireDefault(_About);
-
-	var _Photos = __webpack_require__(471);
+	var _Photos = __webpack_require__(470);
 
 	var _Photos2 = _interopRequireDefault(_Photos);
 
-	var _Dev = __webpack_require__(484);
+	var _Dev = __webpack_require__(483);
 
 	var _Dev2 = _interopRequireDefault(_Dev);
 
@@ -18820,9 +18816,26 @@
 	            _react2['default'].createElement(
 	              'p',
 	              null,
-	              'This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.'
-	            ),
-	            _react2['default'].createElement(_About2['default'], null)
+	              'develops web applications for more then 15 years. He can help you connect your front end to your backend micro services or migrate your site to Drupal 8. Lars has over 10 years experience with PHP frameworks, especially ',
+	              _react2['default'].createElement(
+	                'a',
+	                { href: 'http://www.drupal.org' },
+	                'Drupal'
+	              ),
+	              ' and ',
+	              _react2['default'].createElement(
+	                'a',
+	                { href: 'http://symfony.com' },
+	                'Symfony'
+	              ),
+	              '. This site is based on ',
+	              _react2['default'].createElement(
+	                'a',
+	                { href: 'https://react-bootstrap.github.io/' },
+	                'React Bootstrap'
+	              ),
+	              '.'
+	            )
 	          )
 	        ),
 	        _react2['default'].createElement(
@@ -18843,7 +18856,7 @@
 	              _react2['default'].createElement(
 	                'p',
 	                null,
-	                'Adipisicing ratione incidunt eaque expedita rerum porro inventore. Nihil sit ipsam iure officiis sit eos at quibusdam natus dignissimos natus dolore! Vel doloremque ipsa alias nihil harum laborum necessitatibus rerum?'
+	                'Lars is a freelance web developer based in London and Hamburg, Germany. His clients include a range of enterprises across the UK and the European continent. Contact Lars via linkedin.'
 	              ),
 	              _react2['default'].createElement(_Dev2['default'], null)
 	            ),
@@ -18859,7 +18872,7 @@
 	              _react2['default'].createElement(
 	                'p',
 	                null,
-	                'Sit quia nemo quis enim provident porro eaque accusamus tenetur provident aliquid commodi? Velit nesciunt maiores obcaecati totam praesentium sint vitae exercitationem quaerat maxime iusto et! Consequatur aspernatur sit impedit.'
+	                'Lars frequently takes his camera along for walks around town and has assembled a portfolio of cityscapes of positively amazing places across the world.'
 	              ),
 	              _react2['default'].createElement(_Photos2['default'], null)
 	            )
@@ -34393,115 +34406,15 @@
 
 	var _reactBootstrap = __webpack_require__(238);
 
-	var About = (function (_Component) {
-	  _inherits(About, _Component);
-
-	  function About() {
-	    _classCallCheck(this, About);
-
-	    _get(Object.getPrototypeOf(About.prototype), 'constructor', this).call(this);
-
-	    this.closeModal = this.closeModal.bind(this);
-	    this.openModal = this.openModal.bind(this);
-
-	    this.state = {
-	      open: false
-	    };
-	  }
-
-	  _createClass(About, [{
-	    key: 'closeModal',
-	    value: function closeModal() {
-	      this.setState({ open: false });
-	    }
-	  }, {
-	    key: 'openModal',
-	    value: function openModal() {
-	      this.setState({ open: true });
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      return _react2['default'].createElement(
-	        'p',
-	        null,
-	        _react2['default'].createElement(
-	          _reactBootstrap.Button,
-	          { bsStyle: 'primary', bsSize: 'large', onClick: this.openModal },
-	          'About »'
-	        ),
-	        _react2['default'].createElement(
-	          _reactBootstrap.Modal,
-	          { bsSize: 'large', show: this.state.open, onHide: this.closeModal },
-	          _react2['default'].createElement(
-	            _reactBootstrap.Modal.Header,
-	            { closeButton: true },
-	            _react2['default'].createElement(
-	              _reactBootstrap.Modal.Title,
-	              null,
-	              'About'
-	            )
-	          ),
-	          _react2['default'].createElement(
-	            _reactBootstrap.Modal.Body,
-	            null,
-	            'This demonstrates how to use the Modal component from React-Bootstrap'
-	          ),
-	          _react2['default'].createElement(
-	            _reactBootstrap.Modal.Footer,
-	            null,
-	            _react2['default'].createElement(
-	              _reactBootstrap.Button,
-	              { bsStyle: 'primary', onClick: this.closeModal },
-	              'Close'
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return About;
-	})(_react.Component);
-
-	exports['default'] = About;
-	module.exports = exports['default'];
-
-/***/ },
-/* 471 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _react = __webpack_require__(70);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactBootstrap = __webpack_require__(238);
-
-	var _jquery = __webpack_require__(472);
+	var _jquery = __webpack_require__(471);
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
-	var _FlickrImage = __webpack_require__(473);
+	var _FlickrImage = __webpack_require__(472);
 
 	var _FlickrImage2 = _interopRequireDefault(_FlickrImage);
 
-	var _InstagramImage = __webpack_require__(474);
+	var _InstagramImage = __webpack_require__(473);
 
 	var _InstagramImage2 = _interopRequireDefault(_InstagramImage);
 
@@ -34615,7 +34528,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 472 */
+/* 471 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -36264,7 +36177,7 @@
 	if(!noGlobal){window.jQuery = window.$ = jQuery;}return jQuery;}); // Otherwise append directly
 
 /***/ },
-/* 473 */
+/* 472 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36306,7 +36219,7 @@
 	      var source = "https://farm" + item.farm + ".staticflickr.com/" + item.server + "/" + item.id + "_" + item.secret + ".jpg";
 	      return _react2['default'].createElement(
 	        'div',
-	        null,
+	        { className: 'photo-section' },
 	        _react2['default'].createElement(
 	          _reactBootstrap.Grid,
 	          null,
@@ -36328,7 +36241,7 @@
 	              _react2['default'].createElement(
 	                'p',
 	                null,
-	                'Sit quia nemo quis enim provident porro eaque accusamus tenetur provident aliquid commodi? Velit nesciunt maiores obcaecati totam praesentium sint vitae exercitationem quaerat maxime iusto et! Consequatur aspernatur sit impedit'
+	                'With almost 500 pictures, the photostream on Flickr includes some of the best photos Lars uploaded through the last 10 years.'
 	              ),
 	              _react2['default'].createElement(
 	                'p',
@@ -36353,7 +36266,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 474 */
+/* 473 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36378,7 +36291,7 @@
 
 	var _reactBootstrap = __webpack_require__(238);
 
-	var _reactInstagramEmbed = __webpack_require__(475);
+	var _reactInstagramEmbed = __webpack_require__(474);
 
 	var _reactInstagramEmbed2 = _interopRequireDefault(_reactInstagramEmbed);
 
@@ -36397,7 +36310,7 @@
 	      var link = "https://www.instagram.com/p/BPgC0hkAL53/";
 	      return _react2['default'].createElement(
 	        'div',
-	        null,
+	        { className: 'photo-section' },
 	        _react2['default'].createElement(
 	          _reactBootstrap.Grid,
 	          null,
@@ -36423,7 +36336,7 @@
 	              _react2['default'].createElement(
 	                'p',
 	                null,
-	                'Sit quia nemo quis enim provident porro eaque accusamus tenetur provident aliquid commodi? Velit nesciunt maiores obcaecati totam praesentium sint vitae exercitationem quaerat maxime iusto et! Consequatur aspernatur sit impedit'
+	                'Some more recent photos are now available on Instagram as well.'
 	              ),
 	              _react2['default'].createElement(
 	                'p',
@@ -36448,7 +36361,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 475 */
+/* 474 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36481,11 +36394,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _jsonpP = __webpack_require__(476);
+	var _jsonpP = __webpack_require__(475);
 
 	var _jsonpP2 = _interopRequireDefault(_jsonpP);
 
-	var _queryString = __webpack_require__(481);
+	var _queryString = __webpack_require__(480);
 
 	var _queryString2 = _interopRequireDefault(_queryString);
 
@@ -36682,7 +36595,7 @@
 	exports["default"] = InstagramEmbed;
 
 /***/ },
-/* 476 */
+/* 475 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36692,7 +36605,7 @@
 	});
 	exports['default'] = jsonpP;
 
-	var _jsonp = __webpack_require__(477);
+	var _jsonp = __webpack_require__(476);
 
 	var _jsonp2 = _interopRequireDefault(_jsonp);
 
@@ -36734,7 +36647,7 @@
 	   */
 
 /***/ },
-/* 477 */
+/* 476 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -36743,7 +36656,7 @@
 
 	'use strict';
 
-	var debug = __webpack_require__(478)('jsonp');
+	var debug = __webpack_require__(477)('jsonp');
 
 	/**
 	 * Module exports.
@@ -36837,7 +36750,7 @@
 	}
 
 /***/ },
-/* 478 */
+/* 477 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -36848,7 +36761,7 @@
 
 	'use strict';
 
-	exports = module.exports = __webpack_require__(479);
+	exports = module.exports = __webpack_require__(478);
 	exports.log = log;
 	exports.formatArgs = formatArgs;
 	exports.save = save;
@@ -37009,7 +36922,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(72)))
 
 /***/ },
-/* 479 */
+/* 478 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
@@ -37027,7 +36940,7 @@
 	exports.disable = disable;
 	exports.enable = enable;
 	exports.enabled = enabled;
-	exports.humanize = __webpack_require__(480);
+	exports.humanize = __webpack_require__(479);
 
 	/**
 	 * The currently active debug mode names, and names to skip.
@@ -37216,7 +37129,7 @@
 	}
 
 /***/ },
-/* 480 */
+/* 479 */
 /***/ function(module, exports) {
 
 	/**
@@ -37366,12 +37279,12 @@
 	}
 
 /***/ },
-/* 481 */
+/* 480 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var strictUriEncode = __webpack_require__(482);
-	var objectAssign = __webpack_require__(483);
+	var strictUriEncode = __webpack_require__(481);
+	var objectAssign = __webpack_require__(482);
 
 	function encoderForArrayFormat(opts) {
 		switch (opts.arrayFormat) {
@@ -37555,7 +37468,7 @@
 	};
 
 /***/ },
-/* 482 */
+/* 481 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37566,7 +37479,7 @@
 	};
 
 /***/ },
-/* 483 */
+/* 482 */
 /***/ function(module, exports) {
 
 	/*
@@ -37660,7 +37573,7 @@
 	};
 
 /***/ },
-/* 484 */
+/* 483 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37691,27 +37604,10 @@
 	  function Dev() {
 	    _classCallCheck(this, Dev);
 
-	    _get(Object.getPrototypeOf(Dev.prototype), 'constructor', this).call(this);
-
-	    this.closeModal = this.closeModal.bind(this);
-	    this.openModal = this.openModal.bind(this);
-
-	    this.state = {
-	      open: false
-	    };
+	    _get(Object.getPrototypeOf(Dev.prototype), 'constructor', this).apply(this, arguments);
 	  }
 
 	  _createClass(Dev, [{
-	    key: 'closeModal',
-	    value: function closeModal() {
-	      this.setState({ open: false });
-	    }
-	  }, {
-	    key: 'openModal',
-	    value: function openModal() {
-	      this.setState({ open: true });
-	    }
-	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2['default'].createElement(
@@ -37719,48 +37615,8 @@
 	        null,
 	        _react2['default'].createElement(
 	          _reactBootstrap.Button,
-	          { bsStyle: 'primary', onClick: this.openModal },
-	          'Web Development »'
-	        ),
-	        _react2['default'].createElement(
-	          _reactBootstrap.Modal,
-	          { bsSize: 'large', show: this.state.open, onHide: this.closeModal },
-	          _react2['default'].createElement(
-	            _reactBootstrap.Modal.Header,
-	            { closeButton: true },
-	            _react2['default'].createElement(
-	              _reactBootstrap.Modal.Title,
-	              null,
-	              'Web Development'
-	            )
-	          ),
-	          _react2['default'].createElement(
-	            _reactBootstrap.Modal.Body,
-	            null,
-	            _react2['default'].createElement(
-	              'p',
-	              null,
-	              'Sit quia nemo quis enim provident porro eaque accusamus tenetur provident aliquid commodi? Velit nesciunt maiores obcaecati totam praesentium sint vitae exercitationem quaerat maxime iusto et! Consequatur aspernatur sit impedit'
-	            ),
-	            _react2['default'].createElement(
-	              'p',
-	              null,
-	              _react2['default'].createElement(
-	                _reactBootstrap.Button,
-	                { href: 'https://www.linkedin.com/in/larskleiner', bsStyle: 'info' },
-	                'View on linkedin »'
-	              )
-	            )
-	          ),
-	          _react2['default'].createElement(
-	            _reactBootstrap.Modal.Footer,
-	            null,
-	            _react2['default'].createElement(
-	              _reactBootstrap.Button,
-	              { bsStyle: 'primary', onClick: this.closeModal },
-	              'Close'
-	            )
-	          )
+	          { bsStyle: 'primary', href: 'https://www.linkedin.com/in/larskleiner' },
+	          'View on linkedin »'
 	        )
 	      );
 	    }
@@ -37773,7 +37629,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 485 */
+/* 484 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';

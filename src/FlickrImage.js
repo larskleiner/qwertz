@@ -8,7 +8,7 @@ export default class FlickrImage extends Component {
     let link = "https://www.flickr.com/photos/45872427%40N00/" + item.id + "?rb=1";
     let source = "https://farm" + item.farm + ".staticflickr.com/" + item.server + "/" + item.id + "_" + item.secret + ".jpg";
     return (
-      <div>
+      <div className="photo-section">
         <Grid>
           <Row>
             <Col xs={12} md={6}>
@@ -17,9 +17,7 @@ export default class FlickrImage extends Component {
               </a>
             </Col>
             <Col xs={8} md={3}>
-              <p>
-                Sit quia nemo quis enim provident porro eaque accusamus tenetur provident aliquid commodi? Velit nesciunt maiores obcaecati totam praesentium sint vitae exercitationem quaerat maxime iusto et! Consequatur aspernatur sit impedit
-              </p>
+              <p>With almost 500 pictures, the photostream on Flickr includes some of the best photos Lars uploaded through the last 10 years.</p>
               <p>
                 <Button href={link} bsStyle="info">View on Flickr »</Button>
               </p>
